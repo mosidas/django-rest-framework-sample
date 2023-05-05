@@ -1,0 +1,14 @@
+### get all snippets
+GET http://localhost:8000/snippets/
+
+### get a snippet by id
+GET http://localhost:8000/snippets/1/
+
+### create a snippet
+POST http://localhost:8000/snippets/
+Content-Type:application/json
+
+{
+    "title": "new snippet",
+    "code": "print('hello world')"
+}
